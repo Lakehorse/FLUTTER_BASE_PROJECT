@@ -4,4 +4,4 @@ WORKDIR /home/gradle/src
 RUN gradle build --no-daemon
 
 FROM gcr.io/distroless/java
-COPY -
+COPY --from=build /home/gradle/src/build /usr/app
