@@ -5,3 +5,8 @@ RUN gradle build --no-daemon
 
 FROM gcr.io/distroless/java
 COPY --from=build /home/gradle/src/build /usr/app
+EXPOSE 9085
+EXPOSE 9084
+EXPOSE 8025
+WORKDIR /usr/app
+ENT
