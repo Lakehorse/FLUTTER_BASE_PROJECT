@@ -9,4 +9,4 @@ EXPOSE 9085
 EXPOSE 9084
 EXPOSE 8025
 WORKDIR /usr/app
-ENT
+ENTRYPOINT ["java","-cp", "./libs/*", "com.theagilemonkeys.notes.NotesA
