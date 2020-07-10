@@ -22,4 +22,4 @@
 #
 #   Important for running:
 #
-#   (1) You need a POSIX-comp
+#   (1) You need a POSIX-compliant shell to run this script. If your /bin/sh is
