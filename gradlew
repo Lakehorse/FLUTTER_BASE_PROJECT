@@ -23,4 +23,5 @@
 #   Important for running:
 #
 #   (1) You need a POSIX-compliant shell to run this script. If your /bin/sh is
-#       noncompliant, but you have some other complian
+#       noncompliant, but you have some other compliant shell such as ksh or
+#       bash, then to run
