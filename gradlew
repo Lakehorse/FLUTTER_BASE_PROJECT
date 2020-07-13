@@ -27,4 +27,6 @@
 #       bash, then to run this script, type that shell name before the whole
 #       command line, like:
 #
-#           ksh Gra
+#           ksh Gradle
+#
+#       Busybox and similar reduced shells will NOT work, becaus
