@@ -29,4 +29,5 @@
 #
 #           ksh Gradle
 #
-#       Busybox and similar reduced shells will NOT work, becaus
+#       Busybox and similar reduced shells will NOT work, because this script
+#       requires all of these 
