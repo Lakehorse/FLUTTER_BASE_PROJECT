@@ -32,4 +32,4 @@
 #       Busybox and similar reduced shells will NOT work, because this script
 #       requires all of these POSIX shell features:
 #         * functions;
-#         * expans
+#         * expansions «$var», «${var}», «${var:-default}», «${var+SE
