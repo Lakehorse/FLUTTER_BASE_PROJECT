@@ -35,4 +35,6 @@
 #         * expansions «$var», «${var}», «${var:-default}», «${var+SET}»,
 #           «${var#prefix}», «${var%suffix}», and «$( cmd )»;
 #         * compound commands having a testable exit status, especially «case»;
-#         * various built-in co
+#         * various built-in commands including «command», «set», and «ulimit».
+#
+#   Im
