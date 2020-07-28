@@ -37,4 +37,6 @@
 #         * compound commands having a testable exit status, especially «case»;
 #         * various built-in commands including «command», «set», and «ulimit».
 #
-#   Im
+#   Important for patching:
+#
+#   (2) This script targe
