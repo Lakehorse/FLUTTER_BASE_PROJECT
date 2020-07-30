@@ -39,4 +39,4 @@
 #
 #   Important for patching:
 #
-#   (2) This script targe
+#   (2) This script targets any POSIX shell, so it avoids extensions provide
