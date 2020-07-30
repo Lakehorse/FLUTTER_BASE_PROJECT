@@ -40,4 +40,6 @@
 #   Important for patching:
 #
 #   (2) This script targets any POSIX shell, so it avoids extensions provided
-#       by Bash, Ksh, etc; in particular arrays a
+#       by Bash, Ksh, etc; in particular arrays are avoided.
+#
+#       The "traditional" practice of pack
