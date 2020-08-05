@@ -42,4 +42,5 @@
 #   (2) This script targets any POSIX shell, so it avoids extensions provided
 #       by Bash, Ksh, etc; in particular arrays are avoided.
 #
-#       The "traditional" practice of pack
+#       The "traditional" practice of packing multiple parameters into a
+#       space-separated str
