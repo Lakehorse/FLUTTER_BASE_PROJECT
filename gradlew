@@ -43,4 +43,5 @@
 #       by Bash, Ksh, etc; in particular arrays are avoided.
 #
 #       The "traditional" practice of packing multiple parameters into a
-#       space-separated str
+#       space-separated string is a well documented source of bugs and security
+#       probl
