@@ -44,4 +44,4 @@
 #
 #       The "traditional" practice of packing multiple parameters into a
 #       space-separated string is a well documented source of bugs and security
-#       probl
+#       problems, so this is (mostly) avoided, by progressively accum
