@@ -47,4 +47,4 @@
 #       problems, so this is (mostly) avoided, by progressively accumulating
 #       options in "$@", and eventually passing that to Java.
 #
-#       Where t
+#       Where the inherited environment variables (DEFAULT_JVM_O
