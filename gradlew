@@ -48,4 +48,5 @@
 #       options in "$@", and eventually passing that to Java.
 #
 #       Where the inherited environment variables (DEFAULT_JVM_OPTS, JAVA_OPTS,
-#       and GRADLE_OPTS) rely on word-splitting, t
+#       and GRADLE_OPTS) rely on word-splitting, this is performed explicitly;
+#       see the in-line c
