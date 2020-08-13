@@ -52,4 +52,6 @@
 #       see the in-line comments for details.
 #
 #       There are tweaks for specific operating systems such as AIX, CygWin,
-#       D
+#       Darwin, MinGW, and NonStop.
+#
+#   (3) Thi
