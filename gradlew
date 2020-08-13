@@ -55,4 +55,4 @@
 #       Darwin, MinGW, and NonStop.
 #
 #   (3) This script is generated from the Groovy template
-#       https
+#       https://github.com/gradle/gradle/blob/master/subprojec
