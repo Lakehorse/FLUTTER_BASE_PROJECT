@@ -64,4 +64,7 @@
 
 # Attempt to set APP_HOME
 
-# Resolve links: $0
+# Resolve links: $0 may be a link
+app_path=$0
+
+# Need this for dais
