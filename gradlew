@@ -67,4 +67,6 @@
 # Resolve links: $0 may be a link
 app_path=$0
 
-# Need this for dais
+# Need this for daisy-chained symlinks.
+while
+    APP_HOM
