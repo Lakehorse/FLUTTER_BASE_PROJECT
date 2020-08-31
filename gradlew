@@ -69,4 +69,4 @@ app_path=$0
 
 # Need this for daisy-chained symlinks.
 while
-    APP_HOM
+    APP_HOME=${app_path%"${app_path##*/}"}  # leaves a tra
