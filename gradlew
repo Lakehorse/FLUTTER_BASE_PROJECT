@@ -76,4 +76,8 @@ do
     link=${ls#*' -> '}
     case $link in             #(
       /*)   app_path=$link ;; #(
-      *)    app_path=$A
+      *)    app_path=$APP_HOME$link ;;
+    esac
+done
+
+APP_HOME=$( cd "${APP_HOME:-
