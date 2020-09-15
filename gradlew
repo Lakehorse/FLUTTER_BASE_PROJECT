@@ -74,4 +74,6 @@ while
 do
     ls=$( ls -ld "$app_path" )
     link=${ls#*' -> '}
-    case $link in            
+    case $link in             #(
+      /*)   app_path=$link ;; #(
+      *)    app_path=$A
