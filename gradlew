@@ -107,4 +107,6 @@ cygwin=false
 msys=false
 darwin=false
 nonstop=false
-case "$( uname )" in      
+case "$( uname )" in                #(
+  CYGWIN* )         cygwin=true  ;; #(
+  Da
