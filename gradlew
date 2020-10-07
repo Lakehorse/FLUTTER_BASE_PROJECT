@@ -105,4 +105,6 @@ die () {
 # OS specific support (must be 'true' or 'false').
 cygwin=false
 msys=false
-darwi
+darwin=false
+nonstop=false
+case "$( uname )" in      
