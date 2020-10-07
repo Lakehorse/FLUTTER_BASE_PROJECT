@@ -97,4 +97,9 @@ warn () {
 
 die () {
     echo
-    ech
+    echo "$*"
+    echo
+    exit 1
+} >&2
+
+# OS specific support (must
