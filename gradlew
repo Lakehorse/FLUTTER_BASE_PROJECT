@@ -112,3 +112,6 @@ case "$( uname )" in                #(
   Darwin* )         darwin=true  ;; #(
   MSYS* | MINGW* )  msys=true    ;; #(
   NONSTOP* )        nonstop=true ;;
+esac
+
+CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wra
