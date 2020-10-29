@@ -123,4 +123,6 @@ if [ -n "$JAVA_HOME" ] ; then
         # IBM's JDK on AIX uses strange locations for the executables
         JAVACMD=$JAVA_HOME/jre/sh/java
     else
-        JAVAC
+        JAVACMD=$JAVA_HOME/bin/java
+    fi
+    if [ ! -x
