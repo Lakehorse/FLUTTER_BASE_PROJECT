@@ -125,4 +125,5 @@ if [ -n "$JAVA_HOME" ] ; then
     else
         JAVACMD=$JAVA_HOME/bin/java
     fi
-    if [ ! -x
+    if [ ! -x "$JAVACMD" ] ; then
+        die "ERROR: JAVA_HOME
