@@ -141,4 +141,6 @@ fi
 
 # Increase the maximum file descriptors if we can.
 if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
-    case $MAX
+    case $MAX_FD in #(
+      max*)
+        MAX_FD=$( ulimit -H 
