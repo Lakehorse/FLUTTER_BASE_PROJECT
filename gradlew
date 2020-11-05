@@ -140,4 +140,5 @@ location of your Java installation."
 fi
 
 # Increase the maximum file descriptors if we can.
-if ! "$cygw
+if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
+    case $MAX
