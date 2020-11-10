@@ -150,4 +150,4 @@ if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
       '' | soft) :;; #(
       *)
         ulimit -n "$MAX_FD" ||
-            war
+            warn "Could not set maximum file descriptor limit to $MAX_FD"
