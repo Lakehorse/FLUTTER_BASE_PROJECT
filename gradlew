@@ -151,3 +151,7 @@ if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
       *)
         ulimit -n "$MAX_FD" ||
             warn "Could not set maximum file descriptor limit to $MAX_FD"
+    esac
+fi
+
+# Collect all arguments for the java 
