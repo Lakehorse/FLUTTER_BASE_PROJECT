@@ -156,4 +156,6 @@ fi
 
 # Collect all arguments for the java command, stacking in reverse order:
 #   * args from the command line
-#   * the main class nam
+#   * the main class name
+#   * -classpath
+#   * -D...appname sett
