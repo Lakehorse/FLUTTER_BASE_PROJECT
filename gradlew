@@ -158,4 +158,6 @@ fi
 #   * args from the command line
 #   * the main class name
 #   * -classpath
-#   * -D...appname sett
+#   * -D...appname settings
+#   * --module-path (only if needed)
+#   * DEFAULT_
