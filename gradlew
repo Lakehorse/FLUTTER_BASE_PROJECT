@@ -155,4 +155,5 @@ if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
 fi
 
 # Collect all arguments for the java command, stacking in reverse order:
-#   * args
+#   * args from the command line
+#   * the main class nam
