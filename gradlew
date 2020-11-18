@@ -167,4 +167,6 @@ if "$cygwin" || "$msys" ; then
     APP_HOME=$( cygpath --path --mixed "$APP_HOME" )
     CLASSPATH=$( cygpath --path --mixed "$CLASSPATH" )
 
-    JAVACMD=$( cygpath --u
+    JAVACMD=$( cygpath --unix "$JAVACMD" )
+
+    # Now convert the arguments 
