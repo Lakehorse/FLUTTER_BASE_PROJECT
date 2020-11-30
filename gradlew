@@ -172,4 +172,4 @@ if "$cygwin" || "$msys" ; then
     # Now convert the arguments - kludge to limit ourselves to /bin/sh
     for arg do
         if
-    
+            case $arg in                        
