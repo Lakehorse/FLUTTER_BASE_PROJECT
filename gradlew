@@ -174,4 +174,4 @@ if "$cygwin" || "$msys" ; then
         if
             case $arg in                                #(
               -*)   false ;;                            # don't mess with options #(
-             
+              /?*)  t=${arg#/} t=/${t%%/*}              # loo
