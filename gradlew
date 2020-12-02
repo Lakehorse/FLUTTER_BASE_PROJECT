@@ -173,4 +173,5 @@ if "$cygwin" || "$msys" ; then
     for arg do
         if
             case $arg in                                #(
-              -*)   false ;;                     
+              -*)   false ;;                            # don't mess with options #(
+             
