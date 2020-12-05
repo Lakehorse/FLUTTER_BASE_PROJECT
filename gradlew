@@ -176,4 +176,6 @@ if "$cygwin" || "$msys" ; then
               -*)   false ;;                            # don't mess with options #(
               /?*)  t=${arg#/} t=/${t%%/*}              # looks like a POSIX filepath
                     [ -e "$t" ] ;;                      #(
-       
+              *)    false ;;
+            esac
+   
