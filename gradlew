@@ -178,4 +178,5 @@ if "$cygwin" || "$msys" ; then
                     [ -e "$t" ] ;;                      #(
               *)    false ;;
             esac
-   
+        then
+            arg=$( cygpath --pa
