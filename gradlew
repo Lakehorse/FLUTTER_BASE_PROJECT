@@ -183,4 +183,6 @@ if "$cygwin" || "$msys" ; then
         fi
         # Roll the args list around exactly as many times as the number of
         # args, so each arg winds up back in the position where it started, but
-        # possibly m
+        # possibly modified.
+        #
+        # NB: a `for` loop captures its 
