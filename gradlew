@@ -185,4 +185,5 @@ if "$cygwin" || "$msys" ; then
         # args, so each arg winds up back in the position where it started, but
         # possibly modified.
         #
-        # NB: a `for` loop captures its 
+        # NB: a `for` loop captures its iteration list before it begins, so
+        # changi
