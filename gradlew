@@ -186,4 +186,4 @@ if "$cygwin" || "$msys" ; then
         # possibly modified.
         #
         # NB: a `for` loop captures its iteration list before it begins, so
-        # changi
+        # changing the positional parameters here affects neith
