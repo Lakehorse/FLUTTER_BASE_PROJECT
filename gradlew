@@ -193,4 +193,5 @@ if "$cygwin" || "$msys" ; then
     done
 fi
 
-# Collect all arguments fo
+# Collect all arguments for the java command;
+#   * $DEFAULT_JVM_OPTS, $JAVA_OPTS, and $
