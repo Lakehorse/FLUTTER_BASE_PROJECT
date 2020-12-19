@@ -195,4 +195,4 @@ fi
 
 # Collect all arguments for the java command;
 #   * $DEFAULT_JVM_OPTS, $JAVA_OPTS, and $GRADLE_OPTS can contain fragments of
-#     shell scr
+#     shell script including quotes and variable subst
