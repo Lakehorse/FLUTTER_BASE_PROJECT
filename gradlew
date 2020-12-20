@@ -195,4 +195,5 @@ fi
 
 # Collect all arguments for the java command;
 #   * $DEFAULT_JVM_OPTS, $JAVA_OPTS, and $GRADLE_OPTS can contain fragments of
-#     shell script including quotes and variable subst
+#     shell script including quotes and variable substitutions, so put them in
+#     double quotes to mak
