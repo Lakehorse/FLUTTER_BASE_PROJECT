@@ -201,4 +201,6 @@ fi
 
 set -- \
         "-Dorg.gradle.appname=$APP_BASE_NAME" \
-        -classpath "$CLASSPATH" 
+        -classpath "$CLASSPATH" \
+        org.gradle.wrapper.GradleWrapperMain \
+   
