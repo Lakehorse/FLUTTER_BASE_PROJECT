@@ -207,4 +207,4 @@ set -- \
 
 # Use "xargs" to parse quoted args.
 #
-# Wit
+# With -n1 it outputs one arg per line, with the quotes and backslashes removed.
