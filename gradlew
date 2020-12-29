@@ -211,4 +211,5 @@ set -- \
 #
 # In Bash we could simply go:
 #
-#   readarray ARGS < <( 
+#   readarray ARGS < <( xargs -n1 <<<"$var" ) &&
+#   set -- "${ARGS[@]}" "$@
