@@ -212,4 +212,6 @@ set -- \
 # In Bash we could simply go:
 #
 #   readarray ARGS < <( xargs -n1 <<<"$var" ) &&
-#   set -- "${ARGS[@]}" "$@
+#   set -- "${ARGS[@]}" "$@"
+#
+# but POSIX shell has neither array
