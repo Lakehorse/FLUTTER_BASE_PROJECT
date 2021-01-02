@@ -214,4 +214,5 @@ set -- \
 #   readarray ARGS < <( xargs -n1 <<<"$var" ) &&
 #   set -- "${ARGS[@]}" "$@"
 #
-# but POSIX shell has neither array
+# but POSIX shell has neither arrays nor command substitution, so instead we
+# post-pr
