@@ -215,4 +215,5 @@ set -- \
 #   set -- "${ARGS[@]}" "$@"
 #
 # but POSIX shell has neither arrays nor command substitution, so instead we
-# post-process each arg (as a line of input to sed) to backsl
+# post-process each arg (as a line of input to sed) to backslash-escape any
+# character that might be a shell metac
