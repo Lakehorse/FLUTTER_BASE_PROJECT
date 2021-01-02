@@ -215,4 +215,4 @@ set -- \
 #   set -- "${ARGS[@]}" "$@"
 #
 # but POSIX shell has neither arrays nor command substitution, so instead we
-# post-pr
+# post-process each arg (as a line of input to sed) to backsl
