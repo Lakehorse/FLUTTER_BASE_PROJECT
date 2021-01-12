@@ -224,4 +224,5 @@ set -- \
 # an unmatched quote.
 #
 
-eval "s
+eval "set -- $(
+        printf '%s\n' "$DEFAULT_JVM_OPTS 
