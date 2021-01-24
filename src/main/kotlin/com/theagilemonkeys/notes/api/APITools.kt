@@ -5,4 +5,5 @@ import com.horizen.box.ZenBox
 import com.horizen.box.data.ZenBoxData
 import com.horizen.node.NodeMemoryPool
 import com.horizen.node.SidechainNodeView
-import com.horizen.pr
+import com.horizen.proof.Signature25519
+import com.horizen.proposition.Proposit
