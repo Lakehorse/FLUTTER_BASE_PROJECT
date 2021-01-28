@@ -8,4 +8,6 @@ import com.horizen.node.SidechainNodeView
 import com.horizen.proof.Signature25519
 import com.horizen.proposition.Proposition
 import com.horizen.proposition.PublicKey25519Proposition
-import com.horizen.transaction.AbstractRegula
+import com.horizen.transaction.AbstractRegularTransaction
+import com.horizen.transaction.BoxTransaction
+import java
