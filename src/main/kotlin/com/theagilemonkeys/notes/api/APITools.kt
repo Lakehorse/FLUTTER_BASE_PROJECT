@@ -7,4 +7,5 @@ import com.horizen.node.NodeMemoryPool
 import com.horizen.node.SidechainNodeView
 import com.horizen.proof.Signature25519
 import com.horizen.proposition.Proposition
-import com.horizen.proposition.PublicKey25519Proposi
+import com.horizen.proposition.PublicKey25519Proposition
+import com.horizen.transaction.AbstractRegula
