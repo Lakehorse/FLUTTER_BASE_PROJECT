@@ -10,4 +10,7 @@ import com.horizen.proposition.Proposition
 import com.horizen.proposition.PublicKey25519Proposition
 import com.horizen.transaction.AbstractRegularTransaction
 import com.horizen.transaction.BoxTransaction
-import java
+import java.util.*
+import kotlin.math.abs
+
+private fun boxesFromM
