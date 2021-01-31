@@ -14,4 +14,4 @@ import java.util.*
 import kotlin.math.abs
 
 private fun boxesFromMemoryPool(memoryPool: NodeMemoryPool): List<ByteArray> = memoryPool.transactions
-    .map { tr
+    .map { transaction: BoxTransaction<Proposition?, Box<Propositio
