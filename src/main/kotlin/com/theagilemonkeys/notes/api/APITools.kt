@@ -13,4 +13,4 @@ import com.horizen.transaction.BoxTransaction
 import java.util.*
 import kotlin.math.abs
 
-private fun boxesFromM
+private fun boxesFromMemoryPool(memoryPool: NodeMemoryPool): List<
