@@ -15,4 +15,7 @@ import kotlin.math.abs
 
 private fun boxesFromMemoryPool(memoryPool: NodeMemoryPool): List<ByteArray> = memoryPool.transactions
     .map { transaction: BoxTransaction<Proposition?, Box<Proposition?>?> ->
-        transaction.boxIdsToOpen
+        transaction.boxIdsToOpen().map { it.data() }
+    }.flatten()
+
+@Throws(IllegalS
