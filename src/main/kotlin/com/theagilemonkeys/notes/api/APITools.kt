@@ -18,4 +18,5 @@ private fun boxesFromMemoryPool(memoryPool: NodeMemoryPool): List<ByteArray> = m
         transaction.boxIdsToOpen().map { it.data() }
     }.flatten()
 
-@Throws(IllegalS
+@Throws(IllegalStateException::class)
+fun getTransactionFundingBoxes(view
