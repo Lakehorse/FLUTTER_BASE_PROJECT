@@ -19,4 +19,5 @@ private fun boxesFromMemoryPool(memoryPool: NodeMemoryPool): List<ByteArray> = m
     }.flatten()
 
 @Throws(IllegalStateException::class)
-fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): TransactionBoxes 
+fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): TransactionBoxes {
+    val paymentBoxes = mutableListOf<Box<Proposition>>
