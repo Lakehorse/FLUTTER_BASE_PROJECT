@@ -21,4 +21,7 @@ private fun boxesFromMemoryPool(memoryPool: NodeMemoryPool): List<ByteArray> = m
 @Throws(IllegalStateException::class)
 fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): TransactionBoxes {
     val paymentBoxes = mutableListOf<Box<Proposition>>()
-    val boxIdsToExclude = boxesFromMemoryPool(view.no
+    val boxIdsToExclude = boxesFromMemoryPool(view.nodeMemoryPool)
+    var amountToPay = payment
+
+    run boxSelect
