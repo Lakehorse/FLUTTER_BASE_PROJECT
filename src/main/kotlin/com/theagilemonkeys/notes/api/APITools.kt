@@ -26,4 +26,5 @@ fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): Transact
 
     run boxSelection@{
         view.nodeWallet.boxesOfType(ZenBox::class.java, boxIdsToExclude)
-        
+            .forEach { box ->
+                if (amountToPay <= 0
