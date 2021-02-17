@@ -25,4 +25,5 @@ fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): Transact
     var amountToPay = payment
 
     run boxSelection@{
-        view.nodeWallet.boxesOfType(Z
+        view.nodeWallet.boxesOfType(ZenBox::class.java, boxIdsToExclude)
+        
