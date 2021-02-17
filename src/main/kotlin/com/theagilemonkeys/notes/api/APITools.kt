@@ -24,4 +24,5 @@ fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): Transact
     val boxIdsToExclude = boxesFromMemoryPool(view.nodeMemoryPool)
     var amountToPay = payment
 
-    run boxSelect
+    run boxSelection@{
+        view.nodeWallet.boxesOfType(Z
