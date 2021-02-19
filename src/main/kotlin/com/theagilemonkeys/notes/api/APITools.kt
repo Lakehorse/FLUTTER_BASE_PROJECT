@@ -33,4 +33,6 @@ fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): Transact
             }
     }
 
-    check(a
+    check(amountToPay <= 0) { "Not enough coins to pay the fee." }
+
+    val
