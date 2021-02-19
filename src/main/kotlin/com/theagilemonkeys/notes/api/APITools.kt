@@ -30,3 +30,7 @@ fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): Transact
                 if (amountToPay <= 0) return@boxSelection
                 paymentBoxes += box
                 amountToPay -= box.value()
+            }
+    }
+
+    check(a
