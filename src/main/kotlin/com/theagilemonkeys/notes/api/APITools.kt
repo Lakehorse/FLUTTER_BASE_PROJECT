@@ -36,4 +36,6 @@ fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): Transact
     check(amountToPay <= 0) { "Not enough coins to pay the fee." }
 
     val change = abs(amountToPay)
-    val regularOutputs: Mu
+    val regularOutputs: MutableList<ZenBoxData> = ArrayList()
+    if (change > 0) {
+     
