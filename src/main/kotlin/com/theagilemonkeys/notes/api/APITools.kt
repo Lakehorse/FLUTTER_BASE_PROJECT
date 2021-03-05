@@ -38,4 +38,4 @@ fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): Transact
     val change = abs(amountToPay)
     val regularOutputs: MutableList<ZenBoxData> = ArrayList()
     if (change > 0) {
-     
+        regularOutputs.add(ZenBoxData(paymentBoxes.first().
