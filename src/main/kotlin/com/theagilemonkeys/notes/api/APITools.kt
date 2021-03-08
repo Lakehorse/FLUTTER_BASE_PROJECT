@@ -41,4 +41,7 @@ fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): Transact
         regularOutputs.add(ZenBoxData(paymentBoxes.first().proposition() as PublicKey25519Proposition, change))
     }
 
-    return TransactionBoxes(paymentBoxes, r
+    return TransactionBoxes(paymentBoxes, regularOutputs)
+}
+
+fun <T : AbstractRegularTransaction> SidechainNod
