@@ -39,3 +39,6 @@ fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): Transact
     val regularOutputs: MutableList<ZenBoxData> = ArrayList()
     if (change > 0) {
         regularOutputs.add(ZenBoxData(paymentBoxes.first().proposition() as PublicKey25519Proposition, change))
+    }
+
+    return TransactionBoxes(paymentBoxes, r
