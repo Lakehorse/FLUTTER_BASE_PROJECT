@@ -46,4 +46,6 @@ fun getTransactionFundingBoxes(view: SidechainNodeView, payment: Long): Transact
 
 fun <T : AbstractRegularTransaction> SidechainNodeView.createSignedTransaction(
     fundingBoxes: List<Box<Proposition>>,
-    transactionCreation: (L
+    transactionCreation: (List<Signature25519>) -> T
+): T {
+    val messageToSign = transact
