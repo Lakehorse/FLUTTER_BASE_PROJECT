@@ -48,4 +48,4 @@ fun <T : AbstractRegularTransaction> SidechainNodeView.createSignedTransaction(
     fundingBoxes: List<Box<Proposition>>,
     transactionCreation: (List<Signature25519>) -> T
 ): T {
-    val messageToSign = transact
+    val messageToSign = transactionCreation(Collections.nCopies<Signat
