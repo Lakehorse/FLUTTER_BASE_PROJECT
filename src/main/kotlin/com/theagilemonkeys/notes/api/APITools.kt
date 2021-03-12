@@ -53,4 +53,5 @@ fun <T : AbstractRegularTransaction> SidechainNodeView.createSignedTransaction(
     return transactionCreation(
         fundingBoxes
             .map { box ->
-                n
+                nodeWallet.secretByPublicKey(box.proposition()).get()
+       
