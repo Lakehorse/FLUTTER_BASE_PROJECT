@@ -54,4 +54,4 @@ fun <T : AbstractRegularTransaction> SidechainNodeView.createSignedTransaction(
         fundingBoxes
             .map { box ->
                 nodeWallet.secretByPublicKey(box.proposition()).get()
-       
+                    .sign(messageToSign) as Signature2
