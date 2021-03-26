@@ -59,4 +59,4 @@ fun <T : AbstractRegularTransaction> SidechainNodeView.createSignedTransaction(
     )
 }
 
-class TransactionBoxes(val fundingInputs: List<Box<Proposition>>,
+class TransactionBoxes(val fundingInputs: List<Box<Proposition>>, val changeOutput: List<ZenBoxData>)
