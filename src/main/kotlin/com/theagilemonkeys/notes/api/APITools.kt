@@ -59,4 +59,4 @@ fun <T : AbstractRegularTransaction> SidechainNodeView.createSignedTransaction(
     )
 }
 
-class TransactionB
+class TransactionBoxes(val fundingInputs: List<Box<Proposition>>,
