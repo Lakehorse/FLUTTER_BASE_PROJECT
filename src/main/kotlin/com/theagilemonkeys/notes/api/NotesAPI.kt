@@ -103,3 +103,36 @@ class NotesAPI(private val sidechainTransactionsCompanion: SidechainTransactions
 
     private fun deleteNote(view: SidechainNodeView, request: DeleteNoteRequest): ApiResponse =
         view.getNoteBox(request.id)?.let { noteBox ->
+            if (!view.isBoxSecretPresent(noteBox)) {
+                return NotesAPIErrors.ownerPropositionError
+            }
+
+            val boxes = getTransactionFundingBoxes(view, request.fee)
+
+            val signedTransaction =
+                view.createSignedTransaction(boxes.fundingInputs + (noteBox as Box<Proposition>)) { proofs ->
+                    NoteDeletedTransaction(
+                        (boxes.fundingInputs.map { it.id() } + noteBox.id()).toMutableList(),
+                        proofs,
+                        boxes.changeOutput,
+                        request.fee,
+                        NoteDeletedTransaction.currentVersion.toByte()
+                    )
+                }
+            return DeleteNoteResponse(ByteUtils.toHexString(sidechainTransactionsCompanion.toBytes(signedTransaction)))
+        } ?: run {
+            return NotesAPIErrors.noteBoxNotFound(request.id)
+        }
+
+    private fun SidechainNodeView.getNoteBox(boxId: String): NoteBox? {
+        val noteBoxOption = nodeState.getClosedBox(BytesUtils.fromHexString(boxId))
+        if (!noteBoxOption.isPresent) {
+            return null
+        }
+
+        return noteBoxOption.get() as? NoteBox
+    }
+
+    private fun SidechainNodeView.isBoxSecretPresent(box: NoteBox): Boolean =
+        nodeWallet.secretByPublicKey(box.proposition()).isPresent
+}
