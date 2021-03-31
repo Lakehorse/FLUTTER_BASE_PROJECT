@@ -1,1 +1,4 @@
-package com.theagilemonkeys.no
+package com.theagilemonkeys.notes.api.requests
+
+interface BaseRequest {
+    //
