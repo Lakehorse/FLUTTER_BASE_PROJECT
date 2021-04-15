@@ -3,4 +3,5 @@ package com.theagilemonkeys.notes.api.requests
 import com.fasterxml.jackson.annotation.JsonProperty
 
 data class DeleteNoteRequest(
-    @JsonProperty("id") val id:
+    @JsonProperty("id") val id: String,
+    @JsonProperty("proposition") override va
