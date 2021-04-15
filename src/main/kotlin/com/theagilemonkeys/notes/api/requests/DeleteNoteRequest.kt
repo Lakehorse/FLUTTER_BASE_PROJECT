@@ -4,4 +4,5 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 data class DeleteNoteRequest(
     @JsonProperty("id") val id: String,
-    @JsonProperty("proposition") override va
+    @JsonProperty("proposition") override val proposition: String,
+    @JsonProperty("fee") overri
