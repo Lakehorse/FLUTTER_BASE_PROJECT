@@ -6,4 +6,5 @@ data class UpdateNoteRequest(
     @JsonProperty("id") val id: String,
     @JsonProperty("content") val content: String,
     @JsonProperty("proposition") override val proposition: String,
-    @JsonProperty("fee") override val fee: L
+    @JsonProperty("fee") override val fee: Long
+) : BaseRequest
