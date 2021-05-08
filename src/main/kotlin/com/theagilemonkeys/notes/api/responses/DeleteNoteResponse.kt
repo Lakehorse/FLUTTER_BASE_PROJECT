@@ -4,4 +4,5 @@ import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.annotation.JsonView
 import com.horizen.serialization.Views
 
-@JsonView(Vi
+@JsonView(Views.Default::class)
+data class DeleteNot
