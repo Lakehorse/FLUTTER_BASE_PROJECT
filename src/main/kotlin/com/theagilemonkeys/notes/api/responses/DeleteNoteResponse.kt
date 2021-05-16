@@ -5,4 +5,4 @@ import com.fasterxml.jackson.annotation.JsonView
 import com.horizen.serialization.Views
 
 @JsonView(Views.Default::class)
-data class DeleteNot
+data class DeleteNoteResponse(@JsonProperty("transactionBytes") 
