@@ -1,3 +1,3 @@
 package com.theagilemonkeys.notes.api.responses
 
-imp
+import com.fasterxml.jackson.annotation.JsonProperty
