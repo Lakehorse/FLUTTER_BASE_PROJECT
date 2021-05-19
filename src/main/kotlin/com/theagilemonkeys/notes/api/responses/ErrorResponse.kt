@@ -6,3 +6,4 @@ import com.horizen.api.http.ApiResponse
 import com.horizen.serialization.Views
 
 @JsonView(Views.Default::class)
+data class ErrorResponse(@JsonProperty("descrip
