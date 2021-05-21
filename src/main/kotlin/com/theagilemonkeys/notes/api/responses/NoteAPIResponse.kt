@@ -1,3 +1,5 @@
 package com.theagilemonkeys.notes.api.responses
 
-import com.horizen.api.h
+import com.horizen.api.http.SuccessResponse
+
+interface NoteAPIResponse: Success
