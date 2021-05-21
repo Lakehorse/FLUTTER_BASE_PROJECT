@@ -2,4 +2,6 @@ package com.theagilemonkeys.notes.api.responses
 
 import com.horizen.api.http.SuccessResponse
 
-interface NoteAPIResponse: Success
+interface NoteAPIResponse: SuccessResponse {
+    val transactionBytes: String
+}
