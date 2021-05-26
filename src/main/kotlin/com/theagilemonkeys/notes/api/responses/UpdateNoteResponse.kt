@@ -4,4 +4,6 @@ import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.annotation.JsonView
 import com.horizen.serialization.Views
 
-@JsonView(Views.Default::
+@JsonView(Views.Default::class)
+data class UpdateNoteResponse(
+    @JsonProperty("id") va
