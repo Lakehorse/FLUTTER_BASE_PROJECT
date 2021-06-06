@@ -6,4 +6,5 @@ import com.horizen.serialization.Views
 
 @JsonView(Views.Default::class)
 data class UpdateNoteResponse(
-    @JsonProperty("id") va
+    @JsonProperty("id") val id: String,
+    @JsonProperty("transactionByte
