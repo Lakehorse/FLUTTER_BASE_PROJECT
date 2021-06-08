@@ -7,4 +7,5 @@ import com.horizen.serialization.Views
 @JsonView(Views.Default::class)
 data class UpdateNoteResponse(
     @JsonProperty("id") val id: String,
-    @JsonProperty("transactionByte
+    @JsonProperty("transactionBytes") override val transactionBytes: String
+) : NoteAPIResponse
