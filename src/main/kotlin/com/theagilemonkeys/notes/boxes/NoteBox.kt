@@ -9,4 +9,5 @@ import com.theagilemonkeys.notes.boxes.data.NoteBoxData
 import com.theagilemonkeys.notes.boxes.serializers.NoteBoxSerializer
 
 @JsonView(Views.Default::class)
-data class NoteBox(@JsonProperty("data") val data: N
+data class NoteBox(@JsonProperty("data") val data: NoteBoxData, @JsonProperty("nonce") val nonce: Long) :
+    Abst
