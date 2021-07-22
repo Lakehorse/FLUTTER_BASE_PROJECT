@@ -12,4 +12,5 @@ import com.theagilemonkeys.notes.boxes.serializers.NoteBoxSerializer
 data class NoteBox(@JsonProperty("data") val data: NoteBoxData, @JsonProperty("nonce") val nonce: Long) :
     AbstractBox<PublicKey25519Proposition, NoteBoxData, NoteBox>(data, nonce) {
     override fun serializer() = NoteBoxSerializer()
-    override fun boxTypeId(): Byte = NotesAp
+    override fun boxTypeId(): Byte = NotesAppBoxes.NoteBox.id
+}
