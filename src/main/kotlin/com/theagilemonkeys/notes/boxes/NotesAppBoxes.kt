@@ -1,4 +1,5 @@
 package com.theagilemonkeys.notes.boxes
 
 enum class NotesAppBoxes(val id: Byte) {
-    Not
+    NoteBox(1.toByte())
+}
