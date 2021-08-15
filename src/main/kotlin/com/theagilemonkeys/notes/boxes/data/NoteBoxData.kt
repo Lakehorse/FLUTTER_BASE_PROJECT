@@ -11,4 +11,5 @@ import com.theagilemonkeys.notes.boxes.data.serializers.NoteBoxDataSerializer
 @JsonView(Views.Default::class)
 data class NoteBoxData(
     @JsonProperty("proposition") val proposition: PublicKey25519Proposition,
-    @JsonProperty(
+    @JsonProperty("id") val id: String,
+    @JsonProperty("title") 
