@@ -12,4 +12,5 @@ import com.theagilemonkeys.notes.boxes.data.serializers.NoteBoxDataSerializer
 data class NoteBoxData(
     @JsonProperty("proposition") val proposition: PublicKey25519Proposition,
     @JsonProperty("id") val id: String,
-    @JsonProperty("title") 
+    @JsonProperty("title") val title: String,
+    @JsonProperty("content
