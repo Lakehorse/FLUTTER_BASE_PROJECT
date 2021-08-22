@@ -14,4 +14,5 @@ data class NoteBoxData(
     @JsonProperty("id") val id: String,
     @JsonProperty("title") val title: String,
     @JsonProperty("content") val content: String,
-    @JsonProperty("create
+    @JsonProperty("createdAt") val createdAt: Long
+) : // Does it make sense to
