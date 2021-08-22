@@ -13,4 +13,5 @@ data class NoteBoxData(
     @JsonProperty("proposition") val proposition: PublicKey25519Proposition,
     @JsonProperty("id") val id: String,
     @JsonProperty("title") val title: String,
-    @JsonProperty("content
+    @JsonProperty("content") val content: String,
+    @JsonProperty("create
