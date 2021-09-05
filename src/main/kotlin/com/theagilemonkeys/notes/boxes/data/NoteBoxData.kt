@@ -19,4 +19,5 @@ data class NoteBoxData(
     AbstractBoxData<PublicKey25519Proposition, NoteBox, NoteBoxData>(proposition, 1) {
 
     override fun serializer() = NoteBoxDataSerializer()
-    override fun getBox(nonce: Long): NoteBox = Not
+    override fun getBox(nonce: Long): NoteBox = NoteBox(this, nonce)
+}
