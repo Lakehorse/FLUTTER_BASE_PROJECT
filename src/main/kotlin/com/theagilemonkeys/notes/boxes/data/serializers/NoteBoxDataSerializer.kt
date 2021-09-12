@@ -17,3 +17,12 @@ class NoteBoxDataSerializer: BoxDataSerializer<NoteBoxData> {
         data.content.serialize(writer)
         writer.putLong(data.createdAt)
     }
+
+    override fun parse(reader: Reader): NoteBoxData = NoteBoxData(
+        PublicKey25519PropositionSerializer.getSerializer().parse(reader),
+        reader.string(),
+        reader.string(),
+        reader.string(),
+        reader.long
+    )
+}

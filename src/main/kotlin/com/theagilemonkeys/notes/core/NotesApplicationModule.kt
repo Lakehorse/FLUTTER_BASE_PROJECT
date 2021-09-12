@@ -1,0 +1,30 @@
+
+package com.theagilemonkeys.notes.core
+
+import com.google.inject.AbstractModule
+import com.google.inject.TypeLiteral
+import com.google.inject.name.Names
+import com.horizen.SidechainSettings
+import com.horizen.api.http.ApplicationApiGroup
+import com.horizen.box.Box
+import com.horizen.box.BoxSerializer
+import com.horizen.companion.SidechainTransactionsCompanion
+import com.horizen.proposition.Proposition
+import com.horizen.secret.Secret
+import com.horizen.secret.SecretSerializer
+import com.horizen.settings.SettingsReader
+import com.horizen.state.ApplicationState
+import com.horizen.storage.Storage
+import com.horizen.storage.leveldb.VersionedLevelDbStorageAdapter
+import com.horizen.transaction.BoxTransaction
+import com.horizen.transaction.TransactionSerializer
+import com.horizen.utils.Pair
+import com.horizen.wallet.ApplicationWallet
+import com.theagilemonkeys.notes.api.NotesAPI
+import com.theagilemonkeys.notes.boxes.NotesAppBoxes
+import com.theagilemonkeys.notes.boxes.serializers.NoteBoxSerializer
+import com.theagilemonkeys.notes.transactions.NotesAppTransactions
+import com.theagilemonkeys.notes.transactions.serializers.NoteCreatedTransactionSerializer
+import com.theagilemonkeys.notes.transactions.serializers.NoteDeletedTransactionSerializer
+import com.theagilemonkeys.notes.transactions.serializers.NoteUpdatedTransactionSerializer
+import java.io.File
