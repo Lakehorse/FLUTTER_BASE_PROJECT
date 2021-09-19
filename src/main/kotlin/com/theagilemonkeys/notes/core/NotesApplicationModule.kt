@@ -83,3 +83,62 @@ class NotesApplicationModule(userSettingsFileName: String?) : AbstractModule() {
         val historyStore = File("$dataDirPath/history")
         val consensusStore = File("$dataDirPath/consensusData")
 
+
+        // Add car registry specific API endpoints:
+        // CarApi endpoints processing will be added to the API server.
+        val customApiGroups: MutableList<ApplicationApiGroup> = ArrayList<ApplicationApiGroup>()
+        customApiGroups.add(NotesAPI(transactionsCompanion))
+
+        // No core API endpoints to be disabled:
+        val rejectedApiPaths: MutableList<Pair<String, String>> = ArrayList()
+
+        // Inject custom objects:
+        // Names are equal to the ones specified in SidechainApp class constructor.
+        bind(SidechainSettings::class.java)
+            .annotatedWith(Names.named("SidechainSettings"))
+            .toInstance(sidechainSettings)
+
+        bind(object : TypeLiteral<HashMap<Byte, BoxSerializer<Box<Proposition>>>>() {})
+            .annotatedWith(Names.named("CustomBoxSerializers"))
+            .toInstance(customBoxSerializers)
+
+        bind(object : TypeLiteral<HashMap<Byte, SecretSerializer<Secret>>>() {})
+            .annotatedWith(Names.named("CustomSecretSerializers"))
+            .toInstance(customSecretSerializers)
+
+        bind(object :
+            TypeLiteral<HashMap<Byte, TransactionSerializer<BoxTransaction<Proposition, Box<Proposition>>>>>() {})
+            .annotatedWith(Names.named("CustomTransactionSerializers"))
+            .toInstance(customTransactionSerializers)
+
+        bind(ApplicationWallet::class.java)
+            .annotatedWith(Names.named("ApplicationWallet"))
+            .toInstance(defaultApplicationWallet)
+
+        bind(ApplicationState::class.java)
+            .annotatedWith(Names.named("ApplicationState"))
+            .toInstance(defaultApplicationState)
+
+        bind(Storage::class.java)
+            .annotatedWith(Names.named("SecretStorage"))
+            .toInstance(VersionedLevelDbStorageAdapter(secretStore))
+
+        bind(Storage::class.java)
+            .annotatedWith(Names.named("WalletBoxStorage"))
+            .toInstance(VersionedLevelDbStorageAdapter(walletBoxStore))
+
+        bind(Storage::class.java)
+            .annotatedWith(Names.named("WalletTransactionStorage"))
+            .toInstance(VersionedLevelDbStorageAdapter(walletTransactionStore))
+
+        bind(Storage::class.java)
+            .annotatedWith(Names.named("WalletForgingBoxesInfoStorage"))
+            .toInstance(VersionedLevelDbStorageAdapter(walletForgingBoxesInfoStorage))
+
+        bind(Storage::class.java)
+            .annotatedWith(Names.named("WalletCswDataStorage"))
+            .toInstance(VersionedLevelDbStorageAdapter(walletCswDataStorage))
+
+        bind(Storage::class.java)
+            .annotatedWith(Names.named("StateStorage"))
+            .toInstance(VersionedLevelDbStorageAdapter(stateStore))
