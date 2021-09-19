@@ -142,3 +142,29 @@ class NotesApplicationModule(userSettingsFileName: String?) : AbstractModule() {
         bind(Storage::class.java)
             .annotatedWith(Names.named("StateStorage"))
             .toInstance(VersionedLevelDbStorageAdapter(stateStore))
+
+        bind(Storage::class.java)
+            .annotatedWith(Names.named("StateForgerBoxStorage"))
+            .toInstance(VersionedLevelDbStorageAdapter(stateForgerBoxStore))
+
+        bind(Storage::class.java)
+            .annotatedWith(Names.named("StateUtxoMerkleTreeStorage"))
+            .toInstance(VersionedLevelDbStorageAdapter(stateUtxoMerkleTreeStore))
+
+        bind(Storage::class.java)
+            .annotatedWith(Names.named("HistoryStorage"))
+            .toInstance(VersionedLevelDbStorageAdapter(historyStore))
+
+        bind(Storage::class.java)
+            .annotatedWith(Names.named("ConsensusStorage"))
+            .toInstance(VersionedLevelDbStorageAdapter(consensusStore))
+
+        bind(object : TypeLiteral<MutableList<ApplicationApiGroup>>() {})
+            .annotatedWith(Names.named("CustomApiGroups"))
+            .toInstance(customApiGroups)
+
+        bind(object : TypeLiteral<MutableList<Pair<String, String>>>() {})
+            .annotatedWith(Names.named("RejectedApiPaths"))
+            .toInstance(rejectedApiPaths)
+    }
+}
