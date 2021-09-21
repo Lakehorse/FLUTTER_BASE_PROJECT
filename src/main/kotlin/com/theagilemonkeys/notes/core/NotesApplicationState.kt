@@ -1,4 +1,5 @@
 package com.theagilemonkeys.notes.core
 
 import NoteCreatedValidator
-import NoteDelete
+import NoteDeletedValidator
+import com.horizen.block.SidechainBlock
