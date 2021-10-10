@@ -9,4 +9,5 @@ import com.horizen.state.ApplicationState
 import com.horizen.state.SidechainStateReader
 import com.horizen.transaction.BoxTransaction
 import com.theagilemonkeys.notes.extensions.getOrThrow
-import com.theagilemonkeys.notes.transact
+import com.theagilemonkeys.notes.transactions.NoteCreatedTransaction
+import com.theagilemo
