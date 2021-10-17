@@ -13,4 +13,6 @@ import com.theagilemonkeys.notes.transactions.NoteCreatedTransaction
 import com.theagilemonkeys.notes.transactions.NoteDeletedTransaction
 import com.theagilemonkeys.notes.transactions.NoteUpdatedTransaction
 import com.theagilemonkeys.notes.transactions.validators.NoteUpdatedValidator
-import scala.collectio
+import scala.collection.JavaConverters
+import scala.util.Success
+import scala.util.Try
