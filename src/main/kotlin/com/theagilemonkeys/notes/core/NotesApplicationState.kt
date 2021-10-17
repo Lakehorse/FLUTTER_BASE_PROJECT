@@ -16,3 +16,6 @@ import com.theagilemonkeys.notes.transactions.validators.NoteUpdatedValidator
 import scala.collection.JavaConverters
 import scala.util.Success
 import scala.util.Try
+
+class NotesApplicationState : ApplicationState {
+ 
