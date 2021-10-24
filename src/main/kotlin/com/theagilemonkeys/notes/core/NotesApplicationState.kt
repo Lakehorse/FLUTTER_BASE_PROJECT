@@ -18,4 +18,4 @@ import scala.util.Success
 import scala.util.Try
 
 class NotesApplicationState : ApplicationState {
- 
+    private val noteCreatedValidator = NoteCreatedV
