@@ -20,4 +20,6 @@ import scala.util.Try
 class NotesApplicationState : ApplicationState {
     private val noteCreatedValidator = NoteCreatedValidator()
     private val noteUpdatedValidator = NoteUpdatedValidator()
-    private val noteDeleted
+    private val noteDeletedValidator = NoteDeletedValidator()
+
+    override fun vali
