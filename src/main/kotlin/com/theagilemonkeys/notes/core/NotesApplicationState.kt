@@ -19,4 +19,5 @@ import scala.util.Try
 
 class NotesApplicationState : ApplicationState {
     private val noteCreatedValidator = NoteCreatedValidator()
-    private val noteUpdatedValidator = No
+    private val noteUpdatedValidator = NoteUpdatedValidator()
+    private val noteDeleted
