@@ -22,4 +22,5 @@ class NotesApplicationState : ApplicationState {
     private val noteUpdatedValidator = NoteUpdatedValidator()
     private val noteDeletedValidator = NoteDeletedValidator()
 
-    override fun validate(stateReader: SidechainStateReader, block: S
+    override fun validate(stateReader: SidechainStateReader, block: SidechainBlock) {
+        val createdTransactions = mutableLis
