@@ -25,4 +25,5 @@ class NotesApplicationState : ApplicationState {
     override fun validate(stateReader: SidechainStateReader, block: SidechainBlock) {
         val createdTransactions = mutableListOf<String>()
         JavaConverters.seqAsJavaList(block.transactions()).forEach { transaction ->
-        
+            when (transaction) {
+                is
