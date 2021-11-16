@@ -26,4 +26,5 @@ class NotesApplicationState : ApplicationState {
         val createdTransactions = mutableListOf<String>()
         JavaConverters.seqAsJavaList(block.transactions()).forEach { transaction ->
             when (transaction) {
-                is
+                is NoteCreatedTransaction -> {
+                    if (created
