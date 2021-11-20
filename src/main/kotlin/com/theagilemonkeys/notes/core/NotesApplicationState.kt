@@ -27,4 +27,5 @@ class NotesApplicationState : ApplicationState {
         JavaConverters.seqAsJavaList(block.transactions()).forEach { transaction ->
             when (transaction) {
                 is NoteCreatedTransaction -> {
-                    if (createdTransactions.contains(transaction.data.id))
+                    if (createdTransactions.contains(transaction.data.id)) {
+                        throw IllegalArgumentExceptio
