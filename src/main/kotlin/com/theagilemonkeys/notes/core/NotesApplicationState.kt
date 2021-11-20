@@ -27,4 +27,4 @@ class NotesApplicationState : ApplicationState {
         JavaConverters.seqAsJavaList(block.transactions()).forEach { transaction ->
             when (transaction) {
                 is NoteCreatedTransaction -> {
-                    if (created
+                    if (createdTransactions.contains(transaction.data.id))
