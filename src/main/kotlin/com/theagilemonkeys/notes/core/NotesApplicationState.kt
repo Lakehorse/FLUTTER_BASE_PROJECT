@@ -28,4 +28,5 @@ class NotesApplicationState : ApplicationState {
             when (transaction) {
                 is NoteCreatedTransaction -> {
                     if (createdTransactions.contains(transaction.data.id)) {
-                        throw IllegalArgumentExceptio
+                        throw IllegalArgumentException("Transaction already registered")
+                    }
