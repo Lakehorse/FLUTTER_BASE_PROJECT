@@ -35,4 +35,8 @@ class NotesApplicationState : ApplicationState {
                 }
                 else -> return
             }
-  
+        }
+    }
+
+    override fun validate(
+     
