@@ -30,4 +30,6 @@ class NotesApplicationState : ApplicationState {
                     if (createdTransactions.contains(transaction.data.id)) {
                         throw IllegalArgumentException("Transaction already registered")
                     } else {
-                        createdTransactions += tran
+                        createdTransactions += transaction.data.id
+                    }
+           
