@@ -32,4 +32,7 @@ class NotesApplicationState : ApplicationState {
                     } else {
                         createdTransactions += transaction.data.id
                     }
-           
+                }
+                else -> return
+            }
+  
