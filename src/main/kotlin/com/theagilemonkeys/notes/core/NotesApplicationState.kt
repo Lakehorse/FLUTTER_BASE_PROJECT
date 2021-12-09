@@ -39,4 +39,5 @@ class NotesApplicationState : ApplicationState {
     }
 
     override fun validate(
-     
+        stateReader: SidechainStateReader,
+        trans
