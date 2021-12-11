@@ -43,4 +43,5 @@ class NotesApplicationState : ApplicationState {
         transaction: BoxTransaction<Proposition, Box<Proposition>>
     ) {
         when (transaction) {
-            
+            is NoteCreatedTransaction -> {
+                noteCr
