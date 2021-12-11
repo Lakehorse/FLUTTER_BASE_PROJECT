@@ -40,4 +40,7 @@ class NotesApplicationState : ApplicationState {
 
     override fun validate(
         stateReader: SidechainStateReader,
-        transaction: BoxTransaction<Proposition, Box<Propositio
+        transaction: BoxTransaction<Proposition, Box<Proposition>>
+    ) {
+        when (transaction) {
+            
