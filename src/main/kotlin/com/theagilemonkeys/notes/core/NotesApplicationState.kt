@@ -46,4 +46,5 @@ class NotesApplicationState : ApplicationState {
             is NoteCreatedTransaction -> {
                 noteCreatedValidator.validate(stateReader, transaction).getOrThrow()
             }
-            is NoteU
+            is NoteUpdatedTransaction -> {
+                noteUpdatedValid
