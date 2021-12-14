@@ -47,4 +47,7 @@ class NotesApplicationState : ApplicationState {
                 noteCreatedValidator.validate(stateReader, transaction).getOrThrow()
             }
             is NoteUpdatedTransaction -> {
-                noteUpdatedValidator.validate(stateReader, transaction).getOrThro
+                noteUpdatedValidator.validate(stateReader, transaction).getOrThrow()
+            }
+            is NoteDeletedTransaction -> {
+      
