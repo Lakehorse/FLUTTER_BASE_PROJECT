@@ -50,4 +50,4 @@ class NotesApplicationState : ApplicationState {
                 noteUpdatedValidator.validate(stateReader, transaction).getOrThrow()
             }
             is NoteDeletedTransaction -> {
-      
+                noteDeletedValidator.validate(stateReader, tra
