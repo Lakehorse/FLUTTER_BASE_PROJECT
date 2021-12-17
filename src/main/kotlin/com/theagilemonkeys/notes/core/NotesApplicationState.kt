@@ -56,4 +56,4 @@ class NotesApplicationState : ApplicationState {
         }
     }
 
-    // TODO: here we expe
+    // TODO: here we expect to update notes database. The data from it will be u
