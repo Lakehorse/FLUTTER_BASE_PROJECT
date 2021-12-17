@@ -56,4 +56,5 @@ class NotesApplicationState : ApplicationState {
         }
     }
 
-    // TODO: here we expect to update notes database. The data from it will be u
+    // TODO: here we expect to update notes database. The data from it will be used during validation.
+    override fun onApplyChanges(
