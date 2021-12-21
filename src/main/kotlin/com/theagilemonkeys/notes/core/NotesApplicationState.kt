@@ -59,4 +59,5 @@ class NotesApplicationState : ApplicationState {
     // TODO: here we expect to update notes database. The data from it will be used during validation.
     override fun onApplyChanges(
         stateReader: SidechainStateReader?,
-        bloc
+        blockId: ByteArray?,
+        newBoxes: Mutable
