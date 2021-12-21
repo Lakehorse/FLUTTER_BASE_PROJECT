@@ -60,4 +60,5 @@ class NotesApplicationState : ApplicationState {
     override fun onApplyChanges(
         stateReader: SidechainStateReader?,
         blockId: ByteArray?,
-        newBoxes: Mutable
+        newBoxes: MutableList<Box<Proposition>>?,
+        boxIdsToRemove: Mut
