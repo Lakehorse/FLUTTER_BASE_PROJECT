@@ -64,4 +64,5 @@ class NotesApplicationState : ApplicationState {
         boxIdsToRemove: MutableList<ByteArray>?
     ): Try<ApplicationState> = Success(this)
 
-    // TODO: rollback no
+    // TODO: rollback notes database to certain point.
+    override fun onR
