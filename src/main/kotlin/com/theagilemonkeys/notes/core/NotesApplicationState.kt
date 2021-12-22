@@ -61,4 +61,5 @@ class NotesApplicationState : ApplicationState {
         stateReader: SidechainStateReader?,
         blockId: ByteArray?,
         newBoxes: MutableList<Box<Proposition>>?,
-        boxIdsToRemove: Mut
+        boxIdsToRemove: MutableList<ByteArray>?
+    ): Try<ApplicationStat
