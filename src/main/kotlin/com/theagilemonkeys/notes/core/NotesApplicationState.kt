@@ -62,4 +62,6 @@ class NotesApplicationState : ApplicationState {
         blockId: ByteArray?,
         newBoxes: MutableList<Box<Proposition>>?,
         boxIdsToRemove: MutableList<ByteArray>?
-    ): Try<ApplicationStat
+    ): Try<ApplicationState> = Success(this)
+
+    // TODO: rollback no
