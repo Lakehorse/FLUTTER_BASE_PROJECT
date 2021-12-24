@@ -65,4 +65,5 @@ class NotesApplicationState : ApplicationState {
     ): Try<ApplicationState> = Success(this)
 
     // TODO: rollback notes database to certain point.
-    override fun onR
+    override fun onRollback(blockId: ByteArray?): Try<ApplicationState> =
+      
