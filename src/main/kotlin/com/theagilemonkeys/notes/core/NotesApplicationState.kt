@@ -66,4 +66,5 @@ class NotesApplicationState : ApplicationState {
 
     // TODO: rollback notes database to certain point.
     override fun onRollback(blockId: ByteArray?): Try<ApplicationState> =
-      
+        Success(this)
+}
