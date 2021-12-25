@@ -1,3 +1,5 @@
 package com.theagilemonkeys.notes.extensions
 
-i
+import scorex.util.serialization.Writer
+
+fun Collect
