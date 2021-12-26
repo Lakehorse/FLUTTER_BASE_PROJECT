@@ -4,4 +4,5 @@ import scorex.util.serialization.Writer
 
 fun Collection<ByteArray>.serialize(writer: Writer) {
     writer.putInt(size)
-    forEach { writer.putBytes(it) 
+    forEach { writer.putBytes(it) }
+}
