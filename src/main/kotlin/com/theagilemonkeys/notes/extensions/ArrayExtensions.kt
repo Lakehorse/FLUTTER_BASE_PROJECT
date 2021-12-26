@@ -2,4 +2,5 @@ package com.theagilemonkeys.notes.extensions
 
 import scorex.util.serialization.Writer
 
-fun Collect
+fun Collection<ByteArray>.serialize(writer: Writer) {
+ 
