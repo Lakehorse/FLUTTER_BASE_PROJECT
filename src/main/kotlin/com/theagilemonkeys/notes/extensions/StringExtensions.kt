@@ -1,3 +1,5 @@
 package com.theagilemonkeys.notes.extensions
 
-import scorex.util.serializ
+import scorex.util.serialization.Writer
+
+fun String.serialize(writer: W
