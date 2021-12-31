@@ -4,4 +4,7 @@ import scorex.util.serialization.Writer
 
 fun String.serialize(writer: Writer) {
     this.toByteArray().let {
-        writer.pu
+        writer.putInt(it.size)
+        writer.putBytes(it)
+    }
+}
