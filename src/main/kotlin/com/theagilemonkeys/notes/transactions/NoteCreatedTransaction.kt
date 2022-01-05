@@ -7,4 +7,5 @@ import com.horizen.proof.Signature25519
 import com.horizen.proposition.Proposition
 import com.horizen.transaction.AbstractRegularTransaction
 import com.theagilemonkeys.notes.boxes.data.NoteBoxData
-import com.theagilemonkeys.notes.boxes.data.serializers.
+import com.theagilemonkeys.notes.boxes.data.serializers.NoteBoxDataSerializer
+import com.theagilemonk
