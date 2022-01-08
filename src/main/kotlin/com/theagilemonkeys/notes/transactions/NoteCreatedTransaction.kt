@@ -8,4 +8,5 @@ import com.horizen.proposition.Proposition
 import com.horizen.transaction.AbstractRegularTransaction
 import com.theagilemonkeys.notes.boxes.data.NoteBoxData
 import com.theagilemonkeys.notes.boxes.data.serializers.NoteBoxDataSerializer
-import com.theagilemonk
+import com.theagilemonkeys.notes.extensions.bytesMutableList
+import
