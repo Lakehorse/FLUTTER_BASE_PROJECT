@@ -9,4 +9,5 @@ import com.horizen.transaction.AbstractRegularTransaction
 import com.theagilemonkeys.notes.boxes.data.NoteBoxData
 import com.theagilemonkeys.notes.boxes.data.serializers.NoteBoxDataSerializer
 import com.theagilemonkeys.notes.extensions.bytesMutableList
-import
+import com.theagilemonkeys.notes.extensions.serialize
+import c
