@@ -10,4 +10,5 @@ import com.theagilemonkeys.notes.boxes.data.NoteBoxData
 import com.theagilemonkeys.notes.boxes.data.serializers.NoteBoxDataSerializer
 import com.theagilemonkeys.notes.extensions.bytesMutableList
 import com.theagilemonkeys.notes.extensions.serialize
-import com.theagilemonkeys.notes.transactions.seriali
+import com.theagilemonkeys.notes.transactions.serializers.NoteCreatedTransactionSerializer
+import scor
