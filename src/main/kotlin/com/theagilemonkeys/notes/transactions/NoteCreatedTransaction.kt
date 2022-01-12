@@ -11,4 +11,5 @@ import com.theagilemonkeys.notes.boxes.data.serializers.NoteBoxDataSerializer
 import com.theagilemonkeys.notes.extensions.bytesMutableList
 import com.theagilemonkeys.notes.extensions.serialize
 import com.theagilemonkeys.notes.transactions.serializers.NoteCreatedTransactionSerializer
-import scor
+import scorex.core.`NodeViewModifier$`
+import scorex.c
