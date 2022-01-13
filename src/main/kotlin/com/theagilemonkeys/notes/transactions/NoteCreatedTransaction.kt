@@ -15,4 +15,7 @@ import scorex.core.`NodeViewModifier$`
 import scorex.core.serialization.BytesSerializable
 import scorex.core.serialization.ScorexSerializer
 import scorex.util.serialization.Reader
-import scorex.util.serialization
+import scorex.util.serialization.Writer
+
+class NoteCreatedTransaction(
+    f
