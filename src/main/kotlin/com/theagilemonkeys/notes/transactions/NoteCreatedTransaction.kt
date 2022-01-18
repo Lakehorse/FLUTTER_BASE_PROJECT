@@ -19,4 +19,5 @@ import scorex.util.serialization.Writer
 
 class NoteCreatedTransaction(
     fundingInputsIDs: MutableList<ByteArray>,
-    fundingInputs
+    fundingInputsProofs: List<Signature25519>,
+    changeOutputs:
