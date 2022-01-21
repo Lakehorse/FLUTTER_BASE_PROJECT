@@ -20,4 +20,6 @@ import scorex.util.serialization.Writer
 class NoteCreatedTransaction(
     fundingInputsIDs: MutableList<ByteArray>,
     fundingInputsProofs: List<Signature25519>,
-    changeOutputs:
+    changeOutputs: List<ZenBoxData>,
+    fee: Long,
+    val data: NoteBo
