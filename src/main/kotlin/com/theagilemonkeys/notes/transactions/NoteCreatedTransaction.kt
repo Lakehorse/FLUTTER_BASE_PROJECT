@@ -24,4 +24,4 @@ class NoteCreatedTransaction(
     fee: Long,
     val data: NoteBoxData,
     val version: Byte
-) : AbstractRegularTransaction(fun
+) : AbstractRegularTransaction(fundingInputsIDs, fundingInputsProofs, changeOutp
