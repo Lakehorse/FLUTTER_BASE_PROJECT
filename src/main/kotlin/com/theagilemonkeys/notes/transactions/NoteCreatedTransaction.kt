@@ -22,4 +22,6 @@ class NoteCreatedTransaction(
     fundingInputsProofs: List<Signature25519>,
     changeOutputs: List<ZenBoxData>,
     fee: Long,
-    val data: NoteBo
+    val data: NoteBoxData,
+    val version: Byte
+) : AbstractRegularTransaction(fun
