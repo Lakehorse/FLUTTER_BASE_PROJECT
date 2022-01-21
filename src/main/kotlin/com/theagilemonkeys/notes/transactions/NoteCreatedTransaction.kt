@@ -24,4 +24,6 @@ class NoteCreatedTransaction(
     fee: Long,
     val data: NoteBoxData,
     val version: Byte
-) : AbstractRegularTransaction(fundingInputsIDs, fundingInputsProofs, changeOutp
+) : AbstractRegularTransaction(fundingInputsIDs, fundingInputsProofs, changeOutputs, fee) {
+    companion object {
+        const val curr
