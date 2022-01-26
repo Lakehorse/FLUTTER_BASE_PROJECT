@@ -30,4 +30,5 @@ class NoteCreatedTransaction(
 
         fun parse(reader: Reader): NoteCreatedTransaction {
             return NoteCreatedTransaction(
-                reader.bytesMutableList(`NodeViewModifi
+                reader.bytesMutableList(`NodeViewModifier$`.`MODULE$`.ModifierIdSize()),
+                
