@@ -26,4 +26,6 @@ class NoteCreatedTransaction(
     val version: Byte
 ) : AbstractRegularTransaction(fundingInputsIDs, fundingInputsProofs, changeOutputs, fee) {
     companion object {
-        const val curr
+        const val currentVersion = 1
+
+        fun parse(reader: Reader): NoteCrea
