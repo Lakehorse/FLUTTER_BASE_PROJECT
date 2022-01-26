@@ -28,4 +28,6 @@ class NoteCreatedTransaction(
     companion object {
         const val currentVersion = 1
 
-        fun parse(reader: Reader): NoteCrea
+        fun parse(reader: Reader): NoteCreatedTransaction {
+            return NoteCreatedTransaction(
+   
