@@ -32,4 +32,5 @@ class NoteCreatedTransaction(
             return NoteCreatedTransaction(
                 reader.bytesMutableList(`NodeViewModifier$`.`MODULE$`.ModifierIdSize()),
                 zenBoxProofsSerializer.parse(reader),
-                z
+                zenBoxDataListSerializer.parse(reader),
+                r
