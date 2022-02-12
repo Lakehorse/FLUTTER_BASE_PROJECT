@@ -31,4 +31,5 @@ class NoteCreatedTransaction(
         fun parse(reader: Reader): NoteCreatedTransaction {
             return NoteCreatedTransaction(
                 reader.bytesMutableList(`NodeViewModifier$`.`MODULE$`.ModifierIdSize()),
-                
+                zenBoxProofsSerializer.parse(reader),
+                z
