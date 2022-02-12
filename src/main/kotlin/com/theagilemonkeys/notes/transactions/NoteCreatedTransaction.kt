@@ -35,3 +35,9 @@ class NoteCreatedTransaction(
                 zenBoxDataListSerializer.parse(reader),
                 reader.long,
                 NoteBoxDataSerializer().parse(reader),
+                reader.byte
+            )
+        }
+    }
+
+    override f
