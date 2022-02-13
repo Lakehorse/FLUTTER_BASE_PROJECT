@@ -40,4 +40,5 @@ class NoteCreatedTransaction(
         }
     }
 
-    override fun serializer(): ScorexSerializer<BytesSerializable> 
+    override fun serializer(): ScorexSerializer<BytesSerializable> =
+        NoteCreatedTransactionSerialize
