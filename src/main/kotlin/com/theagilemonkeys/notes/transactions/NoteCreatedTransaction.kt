@@ -45,4 +45,6 @@ class NoteCreatedTransaction(
 
     override fun transactionTypeId(): Byte = NotesAppTransactions.NoteCreated.id
 
-    override fun version(
+    override fun version(): Byte = version
+
+    override fun c
