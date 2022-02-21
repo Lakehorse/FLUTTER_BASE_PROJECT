@@ -47,4 +47,6 @@ class NoteCreatedTransaction(
 
     override fun version(): Byte = version
 
-    override fun c
+    override fun customFieldsData(): ByteArray = data.bytes()
+
+  
