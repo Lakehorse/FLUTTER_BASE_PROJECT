@@ -49,4 +49,4 @@ class NoteCreatedTransaction(
 
     override fun customFieldsData(): ByteArray = data.bytes()
 
-  
+    override fun customDataMessageToSign(): ByteArray
