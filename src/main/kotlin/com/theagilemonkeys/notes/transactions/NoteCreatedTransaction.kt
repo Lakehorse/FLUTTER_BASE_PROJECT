@@ -52,4 +52,4 @@ class NoteCreatedTransaction(
     override fun customDataMessageToSign(): ByteArray = ByteArray(0)
 
     override fun getCustomOutputData(): MutableList<BoxData<Proposition, Box<Proposition>>> =
-      
+        mutableListOf(data as BoxData<Proposition, Box<Propo
