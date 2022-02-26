@@ -55,4 +55,4 @@ class NoteCreatedTransaction(
         mutableListOf(data as BoxData<Proposition, Box<Proposition>>)
 
     fun serialize(writer: Writer) {
- 
+        inputZenBoxIds.serialize(writer)
