@@ -59,4 +59,7 @@ class NoteCreatedTransaction(
         zenBoxProofsSerializer.serialize(inputZenBoxProofs, writer)
         zenBoxDataListSerializer.serialize(outputZenBoxesData, writer)
         writer.putLong(fee)
-        NoteBoxDataSerializer().s
+        NoteBoxDataSerializer().serialize(data, writer)
+        writer.put(version)
+    }
+}
