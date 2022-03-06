@@ -57,4 +57,5 @@ class NoteCreatedTransaction(
     fun serialize(writer: Writer) {
         inputZenBoxIds.serialize(writer)
         zenBoxProofsSerializer.serialize(inputZenBoxProofs, writer)
-        zenBoxDataListSerializer.
+        zenBoxDataListSerializer.serialize(outputZenBoxesData, writer)
+        writ
