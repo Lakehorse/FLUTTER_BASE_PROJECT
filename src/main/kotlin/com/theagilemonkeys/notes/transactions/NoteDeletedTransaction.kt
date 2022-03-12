@@ -1,3 +1,4 @@
 package com.theagilemonkeys.notes.transactions
 
-im
+import com.horizen.box.Box
+import com.horizen.box.data.BoxDa
