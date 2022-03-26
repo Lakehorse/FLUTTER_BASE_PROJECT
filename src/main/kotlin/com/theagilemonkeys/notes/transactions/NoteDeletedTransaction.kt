@@ -8,4 +8,5 @@ import com.horizen.proposition.Proposition
 import com.horizen.transaction.AbstractRegularTransaction
 import com.theagilemonkeys.notes.extensions.bytesMutableList
 import com.theagilemonkeys.notes.extensions.serialize
-import com.theagilemonkeys.notes.transactions.serializers.NoteDeletedTransactio
+import com.theagilemonkeys.notes.transactions.serializers.NoteDeletedTransactionSerializer
+import scorex.core.`NodeViewModi
