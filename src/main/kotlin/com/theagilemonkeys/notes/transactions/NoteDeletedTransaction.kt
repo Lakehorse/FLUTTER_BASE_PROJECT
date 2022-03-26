@@ -7,4 +7,5 @@ import com.horizen.proof.Signature25519
 import com.horizen.proposition.Proposition
 import com.horizen.transaction.AbstractRegularTransaction
 import com.theagilemonkeys.notes.extensions.bytesMutableList
-import com.theagilemonkeys.notes.ext
+import com.theagilemonkeys.notes.extensions.serialize
+import com.theagilemonkeys.notes.tr
