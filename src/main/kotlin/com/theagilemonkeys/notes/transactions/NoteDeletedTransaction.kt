@@ -11,3 +11,5 @@ import com.theagilemonkeys.notes.extensions.serialize
 import com.theagilemonkeys.notes.transactions.serializers.NoteDeletedTransactionSerializer
 import scorex.core.`NodeViewModifier$`
 import scorex.core.serialization.BytesSerializable
+import scorex.core.serialization.ScorexSerializer
+import 
