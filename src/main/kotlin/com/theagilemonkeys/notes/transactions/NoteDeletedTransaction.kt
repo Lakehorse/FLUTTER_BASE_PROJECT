@@ -9,4 +9,5 @@ import com.horizen.transaction.AbstractRegularTransaction
 import com.theagilemonkeys.notes.extensions.bytesMutableList
 import com.theagilemonkeys.notes.extensions.serialize
 import com.theagilemonkeys.notes.transactions.serializers.NoteDeletedTransactionSerializer
-import scorex.core.`NodeViewModi
+import scorex.core.`NodeViewModifier$`
+import scorex.core.serialization.BytesSerializable
