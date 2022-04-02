@@ -16,4 +16,5 @@ import scorex.util.serialization.Reader
 import scorex.util.serialization.Writer
 
 class NoteDeletedTransaction(
-    val fu
+    val fundingInputsIDs: MutableList<ByteArray>,
+    fundingI
