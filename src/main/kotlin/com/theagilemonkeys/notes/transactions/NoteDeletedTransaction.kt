@@ -13,4 +13,7 @@ import scorex.core.`NodeViewModifier$`
 import scorex.core.serialization.BytesSerializable
 import scorex.core.serialization.ScorexSerializer
 import scorex.util.serialization.Reader
-import scorex.
+import scorex.util.serialization.Writer
+
+class NoteDeletedTransaction(
+    val fu
