@@ -17,4 +17,5 @@ import scorex.util.serialization.Writer
 
 class NoteDeletedTransaction(
     val fundingInputsIDs: MutableList<ByteArray>,
-    fundingI
+    fundingInputsProofs: List<Signature25519>,
+    cha
