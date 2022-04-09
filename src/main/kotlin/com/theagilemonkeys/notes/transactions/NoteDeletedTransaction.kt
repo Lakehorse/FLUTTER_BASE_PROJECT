@@ -20,4 +20,5 @@ class NoteDeletedTransaction(
     fundingInputsProofs: List<Signature25519>,
     changeOutputs: List<ZenBoxData>,
     fee: Long,
- 
+    private val version: Byte
+) : AbstractRegularTransaction
