@@ -21,4 +21,6 @@ class NoteDeletedTransaction(
     changeOutputs: List<ZenBoxData>,
     fee: Long,
     private val version: Byte
-) : AbstractRegularTransaction(fundingInputsIDs, fundingInputsProofs, 
+) : AbstractRegularTransaction(fundingInputsIDs, fundingInputsProofs, changeOutputs, fee) {
+    companion object {
+        const 
