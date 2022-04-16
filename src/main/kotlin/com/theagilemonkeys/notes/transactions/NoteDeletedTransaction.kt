@@ -23,4 +23,6 @@ class NoteDeletedTransaction(
     private val version: Byte
 ) : AbstractRegularTransaction(fundingInputsIDs, fundingInputsProofs, changeOutputs, fee) {
     companion object {
-        const 
+        const val currentVersion = 1
+
+        fun parse(reader: Reader
