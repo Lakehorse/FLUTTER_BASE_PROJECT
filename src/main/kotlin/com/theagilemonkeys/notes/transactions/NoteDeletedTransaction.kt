@@ -26,4 +26,5 @@ class NoteDeletedTransaction(
         const val currentVersion = 1
 
         fun parse(reader: Reader): NoteDeletedTransaction {
-            
+            return NoteDeletedTransaction(
+                reader.b
