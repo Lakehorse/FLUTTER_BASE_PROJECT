@@ -25,4 +25,5 @@ class NoteDeletedTransaction(
     companion object {
         const val currentVersion = 1
 
-        fun parse(reader: Reader
+        fun parse(reader: Reader): NoteDeletedTransaction {
+            
