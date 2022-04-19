@@ -27,4 +27,4 @@ class NoteDeletedTransaction(
 
         fun parse(reader: Reader): NoteDeletedTransaction {
             return NoteDeletedTransaction(
-                reader.b
+                reader.bytesMutableList(`NodeViewModifier$`.`MODULE$`.ModifierIdSize()),
