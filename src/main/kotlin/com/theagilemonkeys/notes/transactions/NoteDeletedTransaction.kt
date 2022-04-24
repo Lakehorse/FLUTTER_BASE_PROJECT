@@ -36,4 +36,5 @@ class NoteDeletedTransaction(
         }
     }
 
-    override fun serializer
+    override fun serializer(): ScorexSerializer<BytesSerializable> =
+        N
