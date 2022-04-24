@@ -29,4 +29,7 @@ class NoteDeletedTransaction(
             return NoteDeletedTransaction(
                 reader.bytesMutableList(`NodeViewModifier$`.`MODULE$`.ModifierIdSize()),
                 zenBoxProofsSerializer.parse(reader),
-                zenBoxDataListSerializer.parse(reader
+                zenBoxDataListSerializer.parse(reader),
+                reader.long,
+                reader.byte
+     
