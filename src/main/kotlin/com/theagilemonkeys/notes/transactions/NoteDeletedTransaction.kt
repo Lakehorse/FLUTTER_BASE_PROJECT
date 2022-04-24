@@ -32,4 +32,8 @@ class NoteDeletedTransaction(
                 zenBoxDataListSerializer.parse(reader),
                 reader.long,
                 reader.byte
-     
+            )
+        }
+    }
+
+    override fun serializer
