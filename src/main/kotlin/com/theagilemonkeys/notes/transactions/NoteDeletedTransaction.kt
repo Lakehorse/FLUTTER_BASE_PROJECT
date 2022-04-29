@@ -37,4 +37,6 @@ class NoteDeletedTransaction(
     }
 
     override fun serializer(): ScorexSerializer<BytesSerializable> =
-        NoteDeletedTransactionSerializer() as ScorexSeria
+        NoteDeletedTransactionSerializer() as ScorexSerializer<BytesSerializable>
+
+    override fun 
