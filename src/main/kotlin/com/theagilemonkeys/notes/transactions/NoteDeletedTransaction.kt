@@ -39,4 +39,6 @@ class NoteDeletedTransaction(
     override fun serializer(): ScorexSerializer<BytesSerializable> =
         NoteDeletedTransactionSerializer() as ScorexSerializer<BytesSerializable>
 
-    override fun transactionTypeId(): Byte = NotesAppTransactions.NoteCr
+    override fun transactionTypeId(): Byte = NotesAppTransactions.NoteCreated.id
+
+    override fun version(): Byte =
