@@ -43,4 +43,6 @@ class NoteDeletedTransaction(
 
     override fun version(): Byte = version
 
-    override fun customFieldsData():
+    override fun customFieldsData(): ByteArray = byteArrayOf()
+
+    override fun cust
