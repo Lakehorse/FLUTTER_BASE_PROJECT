@@ -41,4 +41,6 @@ class NoteDeletedTransaction(
 
     override fun transactionTypeId(): Byte = NotesAppTransactions.NoteCreated.id
 
-    override fun version(): Byte =
+    override fun version(): Byte = version
+
+    override fun customFieldsData():
