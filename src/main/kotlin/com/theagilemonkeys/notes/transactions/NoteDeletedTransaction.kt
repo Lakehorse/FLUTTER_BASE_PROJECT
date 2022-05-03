@@ -45,4 +45,6 @@ class NoteDeletedTransaction(
 
     override fun customFieldsData(): ByteArray = byteArrayOf()
 
-    override fun cust
+    override fun customDataMessageToSign(): ByteArray = ByteArray(0)
+
+    ove
