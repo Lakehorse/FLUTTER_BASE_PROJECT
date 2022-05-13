@@ -47,4 +47,7 @@ class NoteDeletedTransaction(
 
     override fun customDataMessageToSign(): ByteArray = ByteArray(0)
 
-    override fun getCustomOutputData(): MutableList<BoxData<Proposition, Box<Proposition>>> = muta
+    override fun getCustomOutputData(): MutableList<BoxData<Proposition, Box<Proposition>>> = mutableListOf()
+
+    fun serialize(writer: Writer) {
+ 
