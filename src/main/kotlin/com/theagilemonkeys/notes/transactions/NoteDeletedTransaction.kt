@@ -50,4 +50,5 @@ class NoteDeletedTransaction(
     override fun getCustomOutputData(): MutableList<BoxData<Proposition, Box<Proposition>>> = mutableListOf()
 
     fun serialize(writer: Writer) {
- 
+        inputZenBoxIds.serialize(writer)
+        zenBox
