@@ -51,4 +51,5 @@ class NoteDeletedTransaction(
 
     fun serialize(writer: Writer) {
         inputZenBoxIds.serialize(writer)
-        zenBox
+        zenBoxProofsSerializer.serialize(inputZenBoxProofs, writer)
+   
