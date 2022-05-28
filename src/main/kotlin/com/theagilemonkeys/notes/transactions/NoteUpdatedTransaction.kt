@@ -28,3 +28,39 @@ class NoteUpdatedTransaction(
 ) : AbstractRegularTransaction(fundingInputsIDs, fundingInputsProofs, changeOutputs, fee) {
     companion object {
         const val currentVersion = 1
+
+        fun parse(reader: Reader): NoteUpdatedTransaction {
+            return NoteUpdatedTransaction(
+                reader.bytesMutableList(`NodeViewModifier$`.`MODULE$`.ModifierIdSize()),
+                zenBoxProofsSerializer.parse(reader),
+                zenBoxDataListSerializer.parse(reader),
+                reader.long,
+                NoteBoxDataSerializer().parse(reader),
+                reader.byte
+            )
+        }
+    }
+
+    override fun serializer(): ScorexSerializer<BytesSerializable> =
+        NoteUpdatedTransactionSerializer() as ScorexSerializer<BytesSerializable>
+
+    override fun transactionTypeId(): Byte = NotesAppTransactions.NoteCreated.id
+
+    override fun version(): Byte = version
+
+    override fun customFieldsData(): ByteArray = data.bytes()
+
+    override fun customDataMessageToSign(): ByteArray = ByteArray(0)
+
+    override fun getCustomOutputData(): MutableList<BoxData<Proposition, Box<Proposition>>> =
+        mutableListOf(data as BoxData<Proposition, Box<Proposition>>)
+
+    fun serialize(writer: Writer) {
+        inputZenBoxIds.serialize(writer)
+        zenBoxProofsSerializer.serialize(inputZenBoxProofs, writer)
+        zenBoxDataListSerializer.serialize(outputZenBoxesData, writer)
+        writer.putLong(fee)
+        NoteBoxDataSerializer().serialize(data, writer)
+        writer.put(version)
+    }
+}
