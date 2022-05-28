@@ -54,4 +54,6 @@ class NoteDeletedTransaction(
         zenBoxProofsSerializer.serialize(inputZenBoxProofs, writer)
         zenBoxDataListSerializer.serialize(outputZenBoxesData, writer)
         writer.putLong(fee)
-        writer.p
+        writer.put(version)
+    }
+}
