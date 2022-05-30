@@ -5,4 +5,4 @@ import com.theagilemonkeys.notes.transactions.NoteCreatedTransaction
 import scorex.util.serialization.Reader
 import scorex.util.serialization.Writer
 
-class NoteCreatedTransa
+class NoteCreatedTransactionSerializer : TransactionSerializer<NoteCreatedTra
