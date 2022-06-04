@@ -5,4 +5,5 @@ import com.theagilemonkeys.notes.transactions.NoteCreatedTransaction
 import scorex.util.serialization.Reader
 import scorex.util.serialization.Writer
 
-class NoteCreatedTransactionSerializer : TransactionSerializer<NoteCreatedTra
+class NoteCreatedTransactionSerializer : TransactionSerializer<NoteCreatedTransaction> {
+    override fun serialize(tr
