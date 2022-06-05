@@ -7,4 +7,7 @@ import scorex.util.serialization.Writer
 
 class NoteCreatedTransactionSerializer : TransactionSerializer<NoteCreatedTransaction> {
     override fun serialize(transaction: NoteCreatedTransaction, writer: Writer) {
-        transaction.serializ
+        transaction.serialize(writer)
+    }
+    
+    override fun parse(reader: 
