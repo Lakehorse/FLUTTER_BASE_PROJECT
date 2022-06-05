@@ -10,4 +10,5 @@ class NoteCreatedTransactionSerializer : TransactionSerializer<NoteCreatedTransa
         transaction.serialize(writer)
     }
     
-    override fun parse(reader: 
+    override fun parse(reader: Reader): NoteCreatedTransaction {
+        return No
