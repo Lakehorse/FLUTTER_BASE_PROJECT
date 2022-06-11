@@ -1,2 +1,3 @@
 import com.horizen.state.SidechainStateReader
-import com.theagilemonkeys.notes.transaction
+import com.theagilemonkeys.notes.transactions.NoteCreatedTransaction
+import com.theagilemonkeys.notes
