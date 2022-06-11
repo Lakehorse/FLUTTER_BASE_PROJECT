@@ -1,1 +1,2 @@
-import com.horizen.state.Sidecha
+import com.horizen.state.SidechainStateReader
+import com.theagilemonkeys.notes.transaction
