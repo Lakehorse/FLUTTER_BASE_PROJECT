@@ -4,4 +4,4 @@ import com.theagilemonkeys.notes.transactions.validators.Validator
 
 
 class NoteCreatedValidator : Validator<NoteCreatedTransaction> {
-    // TODO: F
+    // TODO: Find a way to check if a note exist by internal I
