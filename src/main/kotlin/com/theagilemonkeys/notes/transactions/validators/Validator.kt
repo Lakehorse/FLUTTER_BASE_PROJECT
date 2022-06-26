@@ -4,4 +4,5 @@ import com.horizen.state.SidechainStateReader
 import com.horizen.transaction.AbstractRegularTransaction
 
 interface Validator<T: AbstractRegularTransaction> {
-    fun validate(stateReader: SidechainStateReader, transa
+    fun validate(stateReader: SidechainStateReader, transaction: T): Result<Unit>
+}
